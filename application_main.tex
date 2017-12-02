@@ -3,33 +3,17 @@
 \documentclass[oneside]{article}
 \input{../../src/packages}
 \input{../../cv/cv_packages}
-\renewcommand{\doctitle}{\shortname~Application}
 \usepackage{multicol}
-\hypersetup{
-  pdftitle=\doctitle,            %Adds 	
-   %pdfstartpage=1,                %Opening page number (absolute)
-  %pdfpagemode=UseOutlines,    
-	%bookmarksopenlevel=\maxdimen,     
-}
-\def\reducemargin{0.3in}
-\addtolength{\textwidth}{\reducemargin}		%increase text width to 6in
-\addtolength{\hoffset}{-\reducemargin} %decrease left margin to 1.5in
 \begin{document}
-\lhead{\boldtext{\shortname}}
-\newdate{letterdate}{26}{1}{2015}
-\renewcommand{\recip}{Louisiana State University}
-\renewcommand{\recipaddress}{Department of Physics \& Astronomy\\
-202 Nicholson Hall, Tower Dr.\\
-Baton Rouge, LA 70803-4001\\
-  United States}
-\renewcommand{\comp}{(Pos. \# 038836--8)}
-
-\newcommand{\statename}{Research Statement}
-\newcommand{\refsname}{List of References}
-\newcommand{\cvname}{Curriculum Vit\ae}
-\newcommand{\pubname}{Publication List}
-
-\input{cover_letter}
-
-\input{references} %to be input individually
+\lhead{\textbf{\shortname}}
+\newdate{letterdate}{4}{1}{2012}
+\renewcommand{\recip}{Nuclear Physics Search Committee}
+\renewcommand{\recipaddress}{Central Michigan University\\
+  Mount Pleasant, MI 48859}
+\renewcommand{\comp}{}
+\cvwrapper{empty}{Cover Letter}{\input{letter_body}}%\input{cover_letter}
+%\cvwrapper{fancy}{Statement of Research}{\input{research_cmu}}
+\input{references_cmu}
+\cvwrapper{fancy}{Evidence of Teaching Effectiveness}{\input{evidence_cmu}}
+\cvwrapper{fancy}{Statement of Teaching Philosophy}{\input{teaching_cmu}}
 \end{document}
