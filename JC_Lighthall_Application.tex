@@ -1,0 +1,19 @@
+%%---------------------------"page width" for comments (97 columns)----------------------------%%
+%%3456789112345678921234567893123456789412345678|5123456789612345678971234567898123456789912345%%
+\documentclass[oneside]{article}
+\input{../../src/packages}
+\input{../../cv/cv_packages}
+
+\begin{document}
+\lhead{\textbf{J.~C.~Lighthall}}
+
+\newdate{letterdate}{10}{7}{2012}
+\renewcommand{\recip}{TRIUMF Human Resources}
+\renewcommand{\recipaddress}{4004 Wesbrook Mall\\
+  Vancouver, B. C.\\
+  Canada V6T 2A3}
+\renewcommand{\comp}{(Comp. \# 330)}
+\cvwrapper{empty}{Cover Letter}{\input{letter_body}}
+\cvwrapper{fancy}{Statement of Research}{\input{research}}
+\input{references}
+\end{document}
