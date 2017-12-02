@@ -17,6 +17,11 @@
 *.dvi
 *-converted-to.*
 
+## Output documents (current directory only):
+/*.dvi
+/*.ps
+/*.pdf
+
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
 *.blg
