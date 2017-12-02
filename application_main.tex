@@ -11,25 +11,22 @@
   %pdfpagemode=UseOutlines,    
 	%bookmarksopenlevel=\maxdimen,     
 }
-\def\reducemargin{0.3in}
-\addtolength{\textwidth}{\reducemargin}		%increase text width to 6in
-\addtolength{\hoffset}{-\reducemargin} %decrease left margin to 1.5in
 \begin{document}
 \lhead{\boldtext{\shortname}}
-\newdate{letterdate}{26}{1}{2015}
-\renewcommand{\recip}{Louisiana State University}
-\renewcommand{\recipaddress}{Department of Physics \& Astronomy\\
-202 Nicholson Hall, Tower Dr.\\
-Baton Rouge, LA 70803-4001\\
+\newdate{letterdate}{28}{8}{2015}
+\renewcommand{\recip}{Argonne}
+\renewcommand{\recipaddress}{Physics Division\\
+	9700 S. Cass Avenue\\
+  Argonne, IL 60439\\
   United States}
-\renewcommand{\comp}{(Pos. \# 038836--8)}
+\renewcommand{\comp}{(Req. \# 323613)}
 
 \newcommand{\statename}{Research Statement}
 \newcommand{\refsname}{List of References}
 \newcommand{\cvname}{Curriculum Vit\ae}
 \newcommand{\pubname}{Publication List}
 
-\input{cover_letter}
-
-\input{references} %to be input individually
+%\input{cover_letter}
+\input{research_statement}
+%\input{references}
 \end{document}
