@@ -1,0 +1,18 @@
+%%---------------------------"page width" for comments (97 columns)----------------------------%%
+%%3456789112345678921234567893123456789412345678|5123456789612345678971234567898123456789912345%%
+\documentclass[oneside]{article}
+\input{../../cv_packages}
+\hypersetup{pdftitle=Letter of Resignation}
+\begin{document}
+\lhead{\textbf{J.~C.~Lighthall}}
+\newdateformat{longusdate}{%
+  \dayofweekname{\THEDAY}{\THEMONTH}{\THEYEAR}, \monthname[\THEMONTH] \ordinal{DAY}, \THEYEAR}
+\makeatletter
+\newdate{letterdate}{5}{9}{2012}
+\newcommand{\recip}{Dr. Alan H. Wuosmaa}
+\newcommand{\recipaddress}{Department of Physics\\Western Michigan University\\
+  1903 West Michigan Ave.\\
+  Kalamazoo, MI 49008}
+\newcommand{\comp}{}
+\cvwrapper{empty}{Cover Letter}{\input{resignation_body}}  
+\end{document}
