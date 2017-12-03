@@ -3,16 +3,36 @@
 \documentclass[oneside]{article}
 \input{../../src/packages}
 \input{../../cv/cv_packages}
-
+\renewcommand{\doctitle}{\shortname~Application}
+\hypersetup{
+  pdftitle=\doctitle,            %Adds 	
+   %pdfstartpage=1,                %Opening page number (absolute)
+  %pdfpagemode=UseOutlines,    
+	%bookmarksopenlevel=\maxdimen,     
+}
+\def\reducemargin{0.0in}
+\addtolength{\textwidth}{\reducemargin}
+\addtolength{\hoffset}{-\reducemargin}
 \begin{document}
-\lhead{\textbf{\shortname}}
+\lhead{\boldtext{\shortname}}
+\renewcommand{\workaddress}{TRIUMF\\
+4004 Wesbrook Mall, 
+Vancouver, BC\hspace{6pt}V6T~2A3,
+Canada
+}
 
-\newdate{letterdate}{10}{7}{2012}
-\renewcommand{\recip}{TRIUMF Human Resources}
-\renewcommand{\recipaddress}{4004 Wesbrook Mall\\
-  Vancouver, B. C.\\
-  Canada V6T 2A3}
-\renewcommand{\comp}{(Comp. \# 330)}
+\renewcommand{\addresssuffix}{\\
+office: (604) 222-1047 ext. 6859
+| cell: (778) 999-6006\\
+\href{mailto:lighthall@triumf.ca}{lighthall@triumf.ca}\\%
+}
+\longdate\newdate{letterdate}{26}{1}{2015}
+\renewcommand{\recip}{Louisiana State University}
+\renewcommand{\recipaddress}{Department of Physics \& Astronomy\\
+202 Nicholson Hall, Tower Dr.\\
+Baton Rouge, LA 70803-4001\\
+  United States}
+\renewcommand{\comp}{(Pos. \# 038836--8)}
 
 \newcommand{\statename}{Research Statement}
 \newcommand{\refsname}{List of References}
