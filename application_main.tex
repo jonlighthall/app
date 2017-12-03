@@ -16,7 +16,18 @@
 \addtolength{\hoffset}{-\reducemargin} %decrease left margin to 1.5in
 \begin{document}
 \lhead{\boldtext{\shortname}}
-\newdate{letterdate}{26}{1}{2015}
+\renewcommand{\workaddress}{TRIUMF\\
+4004 Wesbrook Mall, 
+Vancouver, BC\hspace{6pt}V6T~2A3,
+Canada
+}
+
+\renewcommand{\addresssuffix}{\\
+office: (604) 222-1047 ext. 6859
+| cell: (778) 999-6006\\
+\href{mailto:lighthall@triumf.ca}{lighthall@triumf.ca}\\%
+}
+\longdate\newdate{letterdate}{26}{1}{2015}
 \renewcommand{\recip}{Louisiana State University}
 \renewcommand{\recipaddress}{Department of Physics \& Astronomy\\
 202 Nicholson Hall, Tower Dr.\\
