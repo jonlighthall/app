@@ -1,17 +1,6 @@
-\clearpage
-%%\newpage
-%\cvwrapper{fancy}{\statename}{%
-%Given below is my research statement.
-%}
-\pagestyle{fancy}
-\rhead{\desctext{\statename}}
+\cvwrapper{fancy}{\statename}{
+\setcounter{page}{1}
 \cfoot{\thepage{}  of 2}
-\phantomsection
-\addcontentsline{toc}{chapter}{\statename}
-\begin{changemargin}{\indent}
-\nameaddress{\workaddress}%\\
-%\\\displaydate{letterdate}
-\end{changemargin}
 \section*{Background}
 \addcontentsline{toc}{section}{Background}
 
@@ -151,17 +140,12 @@ I look forward to the opportunity to conduct experiments
 using the variety of experimental equipment at Argonne; not limited to HELIOS, but including the Enge split-pole spectrograph and %Gammasphere with the FMA.
 %At Argonne, m
 the every-expanding suite of equipment in Area IV.
-
-
-
-
-\rfoot{\smalltimestamp}
-
+%
+%\rfoot{\smalltimestamp}
 %\nocite{*}
 %\section*{References}
-
 %\bibliographystyle{../../src/elsarticle-aps}
 %\bibliography{../../src/bib_link}
 %\addcontentsline{toc}{section}{References}
 %\phantomsection
-
+}
